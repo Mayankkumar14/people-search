@@ -1,0 +1,15 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.header-container {
+  height: 90px;
+  background-color: $theme-color;
+  .header-text-container {
+    @include float-left;
+    @include word-spacing-custom;
+    @include font-size-basic;
+    margin-top: 26px;
+    margin-left: 50px;
+    color: $white;
+  }
+}

@@ -1,0 +1,25 @@
+@import "./variables";
+
+@mixin float-left {
+  float: left;
+}
+
+@mixin float-right {
+  float: right;
+}
+
+@mixin word-spacing-custom {
+  word-spacing: $word-spacing;
+}
+
+@mixin font-size-basic {
+  font-size: $font-size-basic;
+}
+
+@mixin font-weight-basic {
+  font-weight: 600;
+}
+
+@mixin search-font-size {
+  font-size: 25px;
+}

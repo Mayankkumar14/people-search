@@ -1,0 +1,142 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.people-container {
+  background-color: $default-background-color;
+
+  .search-people-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: inline-block;
+
+    .textfield-root {
+      width: 600px;
+      background-color: $default-background-color;
+
+      .circular-loader {
+        width: 33px !important;
+        height: 33px !important;
+      }
+
+      .MuiInputBase-root:after {
+        border: 1px solid black;
+      }
+
+      .MuiInputLabel-root {
+        @include search-font-size;
+        color: black;
+        background-color: $default-background-color;
+      }
+
+      .MuiInputBase-input {
+        @include search-font-size;
+      }
+    }
+  }
+
+  .box-custom {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5px 5px;
+  }
+
+  .custom-skeleton-container {
+    .custom-skeleton {
+      width: 292px;
+      height: 390px;
+      background-color: $white;
+
+      .row {
+        margin: 20px;
+        height: 41px;
+      }
+    }
+  }
+
+  .grid-container {
+    margin-top: 0px;
+    margin-left: 2%;
+    width: 100%;
+    justify-content: center;
+    justify-self: center;
+
+    .custom-grid-item {
+      max-height: 400px;
+      max-width: 260px;
+
+      span {
+        font-weight: 600;
+        font-size: 17px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: $light-black;
+      }
+
+      .vehicle-button {
+        background-color: $theme-color;
+        @include font-weight-basic;
+      }
+    }
+  }
+
+  .show-more-button-container {
+    .show-more-button {
+      margin: 25px auto;
+      display: block;
+      background-color: $theme-color;
+      width: 260px;
+      height: 47px;
+      @include font-weight-basic;
+
+      .MuiCircularProgress-root {
+        width: 30px !important;
+        height: 30px !important;
+        color: $default-background-color;
+      }
+    }
+  }
+
+  .close-button-modal {
+    background-color: $theme-color;
+    width: 110px;
+  }
+
+  .no-data-box-custom {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 5px 5px;
+
+    .no-data-card-custom {
+      background-color: $default-background-color;
+      text-align: center;
+      box-shadow: none;
+    }
+  }
+}
+
+.show-vehicles-modal {
+  .MuiBox-root {
+    max-height: calc(100vh - 10%);
+  }
+
+  .custom-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $default-background-color;
+    border: 1px solid $border-default;
+    box-shadow: 24;
+    text-align: center;
+    overflow: auto;
+  }
+
+  .close-button {
+    background-color: $theme-color;
+
+    &:hover {
+      background-color: black;
+    }
+  }
+}
